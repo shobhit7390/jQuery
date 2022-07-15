@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style type="text/css">
+  .addcss{
+    height:100px;
+    width:300px;
+    border:1px solid black;
+    background-color:yellow;
+  }
+</style>
+
+<!-- 
+<script>
+  $(document).ready(function(){
+    $("#removeId").click(function(){
+      $("#div1").remove();
+    });
+    $("#emptyId").click(function(){
+      $("#div1").empty();
+    });
+  });
+</script> -->
+
+
+</head>
+<body>
+
+<div id="div1">
+
+This is some text in the div.
+<p>This is a paragraph in the div.</p>
+<p>This is another paragraph in the div.</p>
+
+</div>
+<br>
+
+<button id="removeId">Remove div element</button>
+<button id="emptyId">Empty div element</button>
+
+<script>
+  $(document).ready(function(){
+    $('button').click(function(){
+      $('#div1').addClass('addcss');
+    });
+
+    $('button').dblclick(function(){
+      $('#div1').removeClass('addcss');
+    });
+  });
+</script>
+
+</body>
+</html>

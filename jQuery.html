@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<style type="text/css">
+		#myDiv{
+			width: 100%;
+			padding: 50px 0;
+			text-align: center;
+			background-color: skyblue;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<button>Try it!</button>
+
+	<ol>
+		<li>Shobhit</li>
+		<li> Yadav</li>
+	</ol>
+
+
+
+	<!-- <div id="myDiv" class="classDiv">
+		<h1>Hello Guys! This is my DIV element.</h1>
+	</div>
+	<p><b>Note:</b>The element will not take up any spacewhen the display propertyset to "none"</p>
+	<input type="text" name="">
+	<span id="focusid">Welcome</span>
+	<span id="blurid">Take Care</span> -->
+
+	<script>
+		$(document).ready(function(){
+
+
+			$('button').click(function(){
+				// $('ul').append('<li>AKGEC Ghaziabad</li>');
+				$('ol').prepend('<li>B.Tech</li>');
+			});
+
+
+
+
+
+
+
+
+			// $('p').on({
+			// 	mouseenter:function(){
+			// 		$(this).css('backgroundColor','aqua');
+			// 	},
+			// 	mouseleave:function(){
+			// 		$(this).css('backgroundColor','yellow');
+			// 	},
+			// 	click:function(){
+			// 		alert('This is the way to handle multiple events');
+			// 	}
+			// });
+
+
+
+
+
+
+			// $('button').mouseleave(function(){
+			// 	$('#myDiv').toggle(400);
+			// });
+
+
+			// $('input').keyup(function(){
+			// 	alert('You pressed a key!');
+			// });
+
+
+			// $('span').hide();
+			// $('input').focus(function(){
+			// 	$('#focusid').show().fadeOut(3000);
+			// });
+			// $('input').blur(function(){
+			// 	$('#blurid').show().fadeOut(3000);
+			// });
+		});
+	</script>
+</body>
+</html>
